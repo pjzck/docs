@@ -1,0 +1,18 @@
+filters:
+  and:
+    - file.inFolder("troubleshooting")
+    - file.ext == "md"
+properties:
+  file.name:
+    displayName: 问题
+  file.folder:
+    displayName: 分类
+  file.mtime:
+    displayName: 最近更新
+  file.ctime:
+    displayName: 创建时间
+views:
+  - type: table
+    name: 台账
+    order:
+      - file.mtime

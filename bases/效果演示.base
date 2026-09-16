@@ -1,0 +1,22 @@
+filters:
+  and:
+    - file.ext == "md"
+properties:
+  file.name:
+    displayName: 文档
+  file.folder:
+    displayName: 目录
+  file.mtime:
+    displayName: 修改时间
+views:
+  - type: table
+    name: 表格
+    order:
+      - file.folder
+      - file.name
+  - type: cards
+    name: 卡片
+  - type: list
+    name: 列表
+  - type: table
+    name: 视图

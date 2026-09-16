@@ -1,0 +1,19 @@
+filters:
+  or:
+    - file.inFolder("design")
+    - file.inFolder("routemap")
+properties:
+  file.name:
+    displayName: 文档
+  file.folder:
+    displayName: 目录
+  file.mtime:
+    displayName: 更新时间
+views:
+  - type: table
+    name: 规划/设计
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - file.name

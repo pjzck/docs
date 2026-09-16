@@ -1,0 +1,17 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.mtime > now() - "30d"
+properties:
+  file.name:
+    displayName: 文档
+  file.folder:
+    displayName: 目录
+  file.mtime:
+    displayName: 最后修改
+views:
+  - type: table
+    name: 最近 30 天
+    order:
+      - file.mtime
+    limit: 20

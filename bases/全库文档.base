@@ -1,0 +1,18 @@
+filters:
+  and:
+    - file.ext == "md"
+properties:
+  file.name:
+    displayName: 文档
+  file.folder:
+    displayName: 目录
+  file.mtime:
+    displayName: 修改时间
+  file.size:
+    displayName: 大小
+views:
+  - type: table
+    name: 全库文档
+    order:
+      - file.folder
+      - file.name
