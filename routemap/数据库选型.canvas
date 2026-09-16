@@ -1,0 +1,31 @@
+{
+	"nodes":[
+		{"id":"database-selection","type":"text","text":"# [[knowledge/database/db|数据库选型]]","x":0,"y":0,"width":300,"height":100,"color":"5"},
+		{"id":"need","type":"text","text":"## 是否需要数据库","x":-500,"y":10,"width":280,"height":80,"color":"4"},
+		{"id":"file-storage","type":"text","text":"### 文件存储","x":-900,"y":10,"width":240,"height":80,"color":"4"},
+		{"id":"principles","type":"text","text":"## 选型原则","x":10,"y":-300,"width":280,"height":80,"color":"2"},
+		{"id":"existing-stack","type":"text","text":"### 复用现有技术栈","x":-250,"y":-520,"width":280,"height":80,"color":"2"},
+		{"id":"technical-debt","type":"text","text":"### 控制技术债","x":270,"y":-520,"width":240,"height":80,"color":"2"},
+		{"id":"online","type":"text","text":"## 在线业务","x":500,"y":10,"width":260,"height":80,"color":"1"},
+		{"id":"mysql","type":"text","text":"### [[knowledge/database/mysql|MySQL]]","x":900,"y":-170,"width":240,"height":80,"color":"1"},
+		{"id":"redis","type":"text","text":"### [[knowledge/database/redis|Redis]]","x":900,"y":10,"width":240,"height":80,"color":"1"},
+		{"id":"mongodb","type":"text","text":"### [[knowledge/database/mongodb|MongoDB]]","x":900,"y":190,"width":240,"height":80,"color":"1"},
+		{"id":"analytics","type":"text","text":"## 大数据分析","x":10,"y":300,"width":280,"height":80,"color":"3"},
+		{"id":"hbase","type":"text","text":"### [[knowledge/database/hbase|HBase]]","x":-240,"y":520,"width":240,"height":80,"color":"3"},
+		{"id":"analysis-platform","type":"text","text":"### 分析平台","x":280,"y":520,"width":240,"height":80,"color":"3"}
+	],
+	"edges":[
+		{"id":"database-need","fromNode":"database-selection","fromSide":"left","toNode":"need","toSide":"right","toEnd":"none","color":"4"},
+		{"id":"need-file","fromNode":"need","fromSide":"left","toNode":"file-storage","toSide":"right","toEnd":"none","color":"4"},
+		{"id":"database-principles","fromNode":"database-selection","fromSide":"top","toNode":"principles","toSide":"bottom","toEnd":"none","color":"2"},
+		{"id":"principles-stack","fromNode":"principles","fromSide":"top","toNode":"existing-stack","toSide":"bottom","toEnd":"none","color":"2"},
+		{"id":"principles-debt","fromNode":"principles","fromSide":"top","toNode":"technical-debt","toSide":"bottom","toEnd":"none","color":"2"},
+		{"id":"database-online","fromNode":"database-selection","fromSide":"right","toNode":"online","toSide":"left","toEnd":"none","color":"1"},
+		{"id":"online-mysql","fromNode":"online","fromSide":"right","toNode":"mysql","toSide":"left","toEnd":"none","color":"1"},
+		{"id":"online-redis","fromNode":"online","fromSide":"right","toNode":"redis","toSide":"left","toEnd":"none","color":"1"},
+		{"id":"online-mongodb","fromNode":"online","fromSide":"right","toNode":"mongodb","toSide":"left","toEnd":"none","color":"1"},
+		{"id":"database-analytics","fromNode":"database-selection","fromSide":"bottom","toNode":"analytics","toSide":"top","toEnd":"none","color":"3"},
+		{"id":"analytics-hbase","fromNode":"analytics","fromSide":"bottom","toNode":"hbase","toSide":"top","toEnd":"none","color":"3"},
+		{"id":"analytics-platform","fromNode":"analytics","fromSide":"bottom","toNode":"analysis-platform","toSide":"top","toEnd":"none","color":"3"}
+	]
+}
