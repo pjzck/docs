@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-18",
+  "environment": "User Chrome, existing profile and live Session Agent",
+  "checks": [
+    "Opened a dedicated local test tab in user Chrome",
+    "Read actual controls with element refs and redacted password",
+    "Replaced and verified Chinese/emoji input",
+    "Clicked the form and read the expected page result",
+    "Captured real Chrome viewport PNG",
+    "Closed only the test tab",
+    "Browser control remained connected"
+  ],
+  "browser_version": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+  "screenshot": "session-agent-browser-v3-live.png",
+  "viewport": {
+    "coordinate_space": "viewport-css-pixels",
+    "device_pixel_ratio": 1,
+    "height": 863,
+    "scroll_x": 0,
+    "scroll_y": 0,
+    "width": 1920
+  }
+}

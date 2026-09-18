@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-18",
+  "environment": "Windows; isolated Chromium profile; actual Chrome extension + Native Host + production AgentServer",
+  "checks": [
+    "real extension/native-host/agent handshake",
+    "tabs/open and unknown target rejection",
+    "semantic references, password redaction, shadow DOM and frame limitations",
+    "Chinese/emoji fill, trusted browser input, click and outcome verification",
+    "empty fill and Enter key submission",
+    "content headings/links and explicit pagination",
+    "real viewport PNG with coordinate metadata",
+    "replaced nodes and covered controls fail without clicking through",
+    "navigation/back preserve tab identity and invalidate old refs",
+    "task lease excludes competing callers and releases debugger",
+    "CLI and MCP both use the live bridge, including MCP image output",
+    "explicit stop/resume invalidates old connection handles",
+    "browser wheel scrolling",
+    "close tab and explicit stop disconnect without auto-start"
+  ],
+  "screenshot": "session-agent-browser-v3-acceptance.png"
+}
